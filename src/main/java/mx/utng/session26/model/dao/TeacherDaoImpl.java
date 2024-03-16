@@ -18,6 +18,7 @@ public class TeacherDaoImpl implements ITeacherDao{
     private EntityManager em;
 
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<Teacher> list() {
         return em.createQuery("from Teacher").getResultList();

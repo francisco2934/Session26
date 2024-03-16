@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import jakarta.validation.Valid;
-import mx.utng.session26.model.entity.Student;
 import mx.utng.session26.model.entity.Teacher;
-import mx.utng.session26.model.service.IStudentService;
 import mx.utng.session26.model.service.ITeacherService;
 
 @Controller

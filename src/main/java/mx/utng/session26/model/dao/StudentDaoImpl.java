@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import mx.utng.session26.model.entity.Student;
 /*
  * Clase repositorio o dao, utilizare la 
@@ -24,6 +23,7 @@ public class StudentDaoImpl implements IStudentDao{
     private EntityManager em;
 
 
+    @SuppressWarnings("unchecked")
     @Override
     public List<Student> list() {
         return em.createQuery("from Student").getResultList();
