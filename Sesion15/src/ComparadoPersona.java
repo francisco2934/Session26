@@ -1,0 +1,5 @@
+public class ComparadoPersona {
+
+    import
+    
+}
